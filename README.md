@@ -10,8 +10,19 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 5.	Stop the program.
 
 ## PROGRAM
+~~~
+#include <stdio.h>
+int main()
+{
+ int x=44,b=3;
+ x<<=y;
+ printf("After Left shift Operation: %d",x);
+return 0;
+}
+~~~
 
 ## OUTPUT
+
 
 
 
@@ -47,6 +58,18 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+~~~
+#include <stdio.h>
+int main()
+{
+ int a,b;
+ scanf("%d%d",&a,&b);
+ if(a==b)
+  printf("Both the numbers are equal.");
+else
+ printf("Both the numbers are not equal.:);
+}
+~~~
 
 
 ## OUTPUT
@@ -70,6 +93,19 @@ Write a C Program to convert the given string into lowercase.
 5.	Stop the program.
 
 ## PROGRAM
+~~~
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+int main()
+{
+ char s[10];
+ scanf("%[^\n]",s);
+ int x;
+ x=tolower(s);
+ printf("%s",x);
+}
+~~~
 
 ## OUTPUT
 
@@ -95,6 +131,22 @@ Write a C Program to count the total number of words in a given string using do 
 6.	Stop the program.
 
 ## PROGRAM
+~~~
+#include <stdio.h>
+int main()
+{
+ char s[20];
+ scanf("%[^\n]",s);
+ int i=0,w=0;
+ do{
+     if(s[i]==' ')
+        w++;
+     i++;
+    }while(s[i]!='\0');
+}
+printf("Total no.of words are:%d",w);
+
+~~~
 
 ## OUTPUT
 
